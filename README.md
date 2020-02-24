@@ -61,6 +61,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       another Router for the Post's of a User, this way it is easier to track down bugs and errors
       in our code, this also makes our main entry point of the app much cleaner.
       
+      Forgot to checkout out and first push went to master, questions and scripts
+      
 ## Minimum Viable Product
 
 - [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
