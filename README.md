@@ -48,7 +48,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       resource through our middleware.
       
 - [ ] Describe a Resource?
-      A resource is the data that we care dealing with, it could be a list of users, or the user's
+      A resource is the data that we are dealing with, it could be a list of users, or the user's
       comments on a certain post.
 
 - [ ] What can the API return to help clients know if a request was successful?

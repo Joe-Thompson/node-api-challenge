@@ -1,5 +1,6 @@
 const express = require("express");
 const helpers = require("../data/helpers/projectModel");
+const validateId = require('../middleware/validateID');
 
 const router = express.Router();
 
@@ -13,8 +14,8 @@ router.get('/', (req, res, next) => {
         })
 });
 
-router.get('/:id', (req, res, next) => {
-    helpers.get(req.params.id)
+router.get('/:id', validateId, (req, res, next) => {
+    helpers.getProjectActions(req.params.id)
         .then(projects => {
             return res.status(200).json(projects)
         })
@@ -64,6 +65,7 @@ router.delete('/:id', (req, res, next) => {
            next(err)
        })
 });
+
 
 
 module.exports = router;
