@@ -1,11 +1,13 @@
 const express = require("express");
-const projectRouter = require("./projects/projectRouter");
+const projectRouter = require("./routers/projectRouter");
+const actionRouter = require("./routers/actionRouter");
 
 const server = express();
 const port = 4000;
 
 server.use(express.json());
 server.use("/api/projects", projectRouter);
+server.use("/api/actions", actionRouter);
 
 server.use((req, res) => {
     res.status(404).json({ message: "Route was not found" })

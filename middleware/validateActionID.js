@@ -1,15 +1,15 @@
-const helpers = require("../data/helpers/projectModel");
+const helpers = require("../data/helpers/actionModel");
 
-function validateId() {
+function validateActionId() {
     return (req, res, next) => {
         helpers.get(req.params.id)
             .then((id) => {
                 if (id) {
-                    req.id = id;
+                    req.actionId = id;
                     next();
                 } else {
                     res.status(404).json({
-                        message: "Invalid project id"
+                        message: "Invalid action id"
                     })
                 }
             })
@@ -19,4 +19,4 @@ function validateId() {
     }
 }
 
-module.exports = validateId();
+module.exports = validateActionId();

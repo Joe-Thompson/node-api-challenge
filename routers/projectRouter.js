@@ -1,8 +1,17 @@
 const express = require("express");
 const helpers = require("../data/helpers/projectModel");
 
-
 const router = express.Router();
+
+router.get('/', (req, res, next) => {
+    helpers.get()
+        .then(projects => {
+            return res.status(200).json(projects)
+        })
+        .catch(err => {
+            next(err)
+        })
+});
 
 router.get('/:id', (req, res, next) => {
     helpers.get(req.params.id)
