@@ -48,7 +48,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       resource through our middleware.
       
 - [ ] Describe a Resource?
-      A resource is the data that we care dealing with, it could be a list of users, or the user's
+      A resource is the data that we are dealing with, it could be a list of users, or the user's
       comments on a certain post.
 
 - [ ] What can the API return to help clients know if a request was successful?
@@ -60,6 +60,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       make our apps more readable and developer friendly. We can have a Router for Users, and
       another Router for the Post's of a User, this way it is easier to track down bugs and errors
       in our code, this also makes our main entry point of the app much cleaner.
+      
+      Forgot to checkout out and first push went to master, questions and scripts
       
 ## Minimum Viable Product
 
